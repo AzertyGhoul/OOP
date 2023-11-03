@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "presentation": {
+                "reveal": "silent",
+                "close": true
+            },
+            "label": "dir",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/2"
+            },
+            "command": "g++ -c 1.cpp -I SFML-2.6.0/include; g++ 1.o -o sfml-app -L SFML-2.6.0/lib -lsfml-graphics -lsfml-window -lsfml-system; ./sfml-app.exe",
+            "problemMatcher": []
+        }
+    ]
+}
